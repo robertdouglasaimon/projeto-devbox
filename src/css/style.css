@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Edição dos itens do header--------------*/
+/* Itens do NAV */
+.navbar {
+    margin-top: 1.8rem;
+}
+
+/* Espaçando os itens do menu */
+.navbar-nav {
+    gap: 1.5rem;
+}
+
+/* Links do menu */
+.nav-link {
+  font-weight: bolder !important;
+  color: #02278d !important;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.zoom-hover {
+  transition: transform 0.3s ease; /* suaviza o efeito */
+}
+.zoom-hover:hover {
+  transform: scale(1.2); /* aumenta em 20% no hover */
+}
+
+/* Logo DevBox */
+.logo-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+}
+
+/* Descricao DevBox */
+.logo-devbox-descricao {
+    font-size: medium;
+    font-weight: bold;
+    color: #02278d;
+    font-size: 2.5rem;
+}
+
+/* Menu e   Menu Hamburguer */
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+/*-----------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/* ÁREA DESTINADA AO MOBILE --------------------------------------------------------------------*/
+
+/* Menu Hamburguer */
+@media (max-width: 991.98px) { 
+    .navbar-collapse {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 1rem; 
+        padding-top: 1rem;
+
+        position: relative;
+        right: 0;
+        left: 13rem;
+        top: 0;
+        width: 100vh;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+    
+}
