@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* Font Face */
+@font-face {
+    font-family: "Noto Sans", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap") format("truetype");
+}
+
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-brand:#02278d;
+    --azul-hover-mobile: #e2e3f1;
+    --branco: #fff;
+    --preto: #000;
+    --cinza-azulado: #485967;
+    --laranja: #ff7a00;
+
+    --Arial-Helvetica: Arial, Helvetica, sans-serif;
+    --Noto-Sans:"Noto Sans", sans-serif;
+}
+
+/* Edição dos itens do header--------------*/
+/* Itens do NAV */
+.navbar {
+    margin-top: 1.8rem;
+}
+
+/* Espaçando os itens do menu */
+.navbar-nav {
+    gap: 1.5rem;
+}
+
+/* Links do menu */
+.nav-link {
+  font-weight: bolder !important;
+  color: var(--azul-brand) !important;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.zoom-hover {
+  transition: transform 0.3s ease; /* suaviza o efeito */
+}
+.zoom-hover:hover {
+  transform: scale(1.2); /* aumenta em 20% no hover */
+  background-color: var(--azul-hover-mobile);
+  border-radius: 5px;
+}
+
+/* Logo DevBox */
+.logo-img img {
+    width: 160%;
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-right: 2.0rem;
+}
+
+/* Descricao DevBox */
+.logo-devbox-descricao {
+    font-size: medium;
+    font-weight: bold;
+    color: var(--azul-brand);
+    font-size: 2.5rem;
+}
+
+/* Menu e   Menu Hamburguer */
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/* Edição dos itens do main---------------------------------------------------------------------------------------*/
+/* SECTION 1 --*/
+.section1 {
+    margin: 0 0 138px 0;
+}
+
+.section1-title {
+    margin: 1rem 0 0 12rem;
+}
+
+.section1-title h1 {
+    color: var(--preto);
+    font-weight: 650;
+    font-size: 5rem;
+    text-align: left;
+}
+
+.section1-title p {
+    padding-top: 1rem;
+    font-size: 25px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* Edição dos itens footer--------------*/
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--preto);
+    
+}
+
+footer a:hover {
+    font-weight: bold;
+    color: var(--azul-brand);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* ÁREA DESTINADA AO MOBILE --------------------------------------------------------------------*/
+
+/* Menu Hamburguer */
+@media (max-width: 991.98px) {    
+    .navbar {
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+    }
+
+    /*  Menu colapsado do modo mobile */
+    .navbar-collapse {
+        background-color: var(--azul-hover-mobile);
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 1rem; 
+        padding-top: 1rem;
+
+        position: relative;
+        right: 0;
+        left: 14rem;
+        top: 0;
+        width: 100vh;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    /* Efeito de zoom ao passar o mouse no modo mobile */
+    .zoom-hover:hover {
+        background-color: var(--branco);
+        border-radius: 5px;
+        padding: 0 5rem;
+        margin: 1rem 0;
+    }
+
+    /* Logo DevBox */
+    .logo-img {
+        width: 40px;
+        height: auto;
+    }
+    
+}
+/*------------------------------------*/
+
+
+/*------------------------------------*/
+/* section1 do modo mobile */
+@media (max-width: 991.98px) {
+
+    .section1 {
+        margin: 0 0 5rem 0;
+    }
+
+    .section1-title {
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+
+    .section1-title h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .section1-title p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section1-btn {
+        display: block;
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
+
+/*------------------------------------*/
+
+
+/*------------------------------------*/
+@media (max-width: 991.98px) {
+/* section2 do modo mobile */
+    .section2 {
+        margin: 0 0 8rem 0;
+    }
+
+    .section2-title  h2 {
+        font-size: 20px;
+        margin: 0 0 0 -11rem;
+        text-align: center;
+    }
+
+    .section2 h3 {
+        font-size: 35px;
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+
+    .section2 p {
+        font-size: 20px;
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+
+    .section2-list {
+        font-size: 20px;
+        margin: 2rem 0 0 0;
+        text-align: left;
+    }
+
+}
+/*------------------------------------*/
+
+/*------------------------------------*/
+@media (max-width: 991.98px) {
+    /* Edição dos itens do carrousel--------------*/
+
+    .section2-carrousel {
+        margin: 5rem 0 0 0;
+    }
+
+}
+/*------------------------------------*/

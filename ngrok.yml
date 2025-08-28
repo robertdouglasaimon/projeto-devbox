@@ -1,0 +1,7 @@
+version: '2'
+agent:
+  authtoken: 31Knlg5W3wgjaOJwQNSLImgyQxA_38LTuKRfuh6rC4FfEgMtX
+tunnel:
+  javascript:
+    addr: 5500
+    protocol: http
