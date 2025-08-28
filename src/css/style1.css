@@ -77,7 +77,7 @@
     align-items: end;
     width: 100%;
 }
-/*-----------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
 
 
 /* Edição dos itens do main---------------------------------------------------------------------------------------*/
@@ -102,88 +102,6 @@
     font-size: 25px;
 }
 
-.section1-btn {
-    margin: 1rem 0 0 12rem;
-}
-
-.btn {
-    width: 180px;
-    height: 55px;
-    font-size: 20px;
-    border-radius: 13px;
-
-    transition: transform 0.3s ease; /* suaviza o efeito */
-}
-
-.btn:hover {
-  transform: scale(1.1); /* aumenta em 15% no hover */
-  background-color: var(--laranja);
-  border: var(--preto) solid 1px;
-  color: var(--preto);
-}
-
-/* SECTION 2 --*/
-.section2 {
-    margin: 0 0 10rem 0;
-}
-
-.section2-title {
-    margin: 1rem 0 0 12rem;
-}
-
-
-.section2-title h2 {
-
-    font-family: var(--Arial-Helvetica);
-    color: var(--cinza-azulado);
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: left;
-
-    text-transform: uppercase; /* transforma o texto em maiúsculo */
-}
-
-.section2 h3 {
-    color: var(--preto);
-    font-weight: 650;
-    font-size: 5rem;
-    text-align: left;
-
-    margin: 1rem 0 0 12rem;
-}
-
-.section2 p {
-    font-size: 1.5rem;
-    margin: 1rem 0 0 12rem;
-}
-.section2-list {
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 1rem 0 0 12rem;
-}
-
-.section2-carrousel {
-    margin: 10rem 0 0 10rem;
-}
-
-/* Edição dos itens do carrousel--------------*/
-.carousel-item img {
-    border-radius: 15px;
-}
-
-.carousel-posicao {
-    background-color: #000;
-    text-align: center;
-    border-radius: 15px;
-
-    margin: auto 0;
-}
-
-.carousel-posicao p {
-    margin: 1rem 0 0 0;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -203,10 +121,7 @@ footer a:hover {
     color: var(--azul-brand);
 }
 
-
-
 /*--------------------------------------------------------------------------------------------------------------------*/
-
 
 
 
