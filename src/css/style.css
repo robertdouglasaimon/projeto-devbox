@@ -25,6 +25,14 @@
     --Noto-Sans:"Noto Sans", sans-serif;
 }
 
+body {
+    background-color: var(--branco) !important;
+}
+
+header {
+    background-color: var(--branco);
+}
+
 /* Edição dos itens do header--------------*/
 /* Itens do NAV */
 .navbar {
